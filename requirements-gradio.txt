@@ -1,0 +1,2 @@
+-r requirements-training.txt
+gradio>=5.0,<6.0

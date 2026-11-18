@@ -1,0 +1,208 @@
+{
+  "model": "Logistic Regression headline model",
+  "trained_at_utc": "2026-11-18T09:17:07.299412+00:00",
+  "training_rows": 30863,
+  "dataset_rows": 38681,
+  "selected_parameters": {
+    "model": "Logistic Regression",
+    "C": 3.0,
+    "class_weight": "balanced",
+    "decision_threshold": -1.4081756036506583,
+    "selection_metric": "chronological validation accuracy, then macro-F1"
+  },
+  "decision_threshold": -1.4081756036506583,
+  "random_holdout_metrics": {
+    "accuracy": 0.9594157942354918,
+    "macro_f1": 0.9591982082412358,
+    "roc_auc": 0.9927772650600255,
+    "confusion_matrix": [
+      [
+        3429,
+        150
+      ],
+      [
+        164,
+        3994
+      ]
+    ],
+    "classification_report": {
+      "Fake": {
+        "precision": 0.9543556916225995,
+        "recall": 0.9580888516345348,
+        "f1-score": 0.9562186279977691,
+        "support": 3579.0
+      },
+      "Real": {
+        "precision": 0.9638030888030888,
+        "recall": 0.9605579605579606,
+        "f1-score": 0.9621777884847025,
+        "support": 4158.0
+      },
+      "accuracy": 0.9594157942354918,
+      "macro avg": {
+        "precision": 0.9590793902128442,
+        "recall": 0.9593234060962477,
+        "f1-score": 0.9591982082412358,
+        "support": 7737.0
+      },
+      "weighted avg": {
+        "precision": 0.9594328891767515,
+        "recall": 0.9594157942354918,
+        "f1-score": 0.9594211857468539,
+        "support": 7737.0
+      }
+    },
+    "test_rows": 7737
+  },
+  "random_selection": {
+    "C": 3.0,
+    "class_weight": null,
+    "decision_threshold": 0.2725330745145135,
+    "validation_metrics": {
+      "accuracy": 0.9570205202779124,
+      "macro_f1": 0.9567482970177581,
+      "roc_auc": 0.9917622121794039,
+      "confusion_matrix": [
+        [
+          2716,
+          147
+        ],
+        [
+          119,
+          3207
+        ]
+      ],
+      "classification_report": {
+        "Fake": {
+          "precision": 0.9580246913580247,
+          "recall": 0.9486552567237164,
+          "f1-score": 0.9533169533169533,
+          "support": 2863.0
+        },
+        "Real": {
+          "precision": 0.9561717352415027,
+          "recall": 0.9642212868310283,
+          "f1-score": 0.9601796407185629,
+          "support": 3326.0
+        },
+        "accuracy": 0.9570205202779124,
+        "macro avg": {
+          "precision": 0.9570982132997636,
+          "recall": 0.9564382717773723,
+          "f1-score": 0.9567482970177581,
+          "support": 6189.0
+        },
+        "weighted avg": {
+          "precision": 0.9570289033400003,
+          "recall": 0.9570205202779124,
+          "f1-score": 0.9570049963445432,
+          "support": 6189.0
+        }
+      },
+      "test_rows": 6189
+    }
+  },
+  "chronological_validation_metrics": {
+    "accuracy": 0.9423428124184712,
+    "macro_f1": 0.9191162814990548,
+    "roc_auc": 0.9775504518505728,
+    "confusion_matrix": [
+      [
+        1558,
+        317
+      ],
+      [
+        125,
+        5666
+      ]
+    ],
+    "classification_report": {
+      "Fake": {
+        "precision": 0.9257278669043375,
+        "recall": 0.8309333333333333,
+        "f1-score": 0.8757729061270376,
+        "support": 1875.0
+      },
+      "Real": {
+        "precision": 0.9470165468828347,
+        "recall": 0.9784147815575893,
+        "f1-score": 0.9624596568710718,
+        "support": 5791.0
+      },
+      "accuracy": 0.9423428124184712,
+      "macro avg": {
+        "precision": 0.936372206893586,
+        "recall": 0.9046740574454613,
+        "f1-score": 0.9191162814990548,
+        "support": 7666.0
+      },
+      "weighted avg": {
+        "precision": 0.9418096234599698,
+        "recall": 0.9423428124184712,
+        "f1-score": 0.9412572491427827,
+        "support": 7666.0
+      }
+    },
+    "test_rows": 7666
+  },
+  "chronological_holdout_metrics": {
+    "accuracy": 0.982857873864654,
+    "macro_f1": 0.9569745070140214,
+    "roc_auc": 0.9954956356603839,
+    "confusion_matrix": [
+      [
+        810,
+        113
+      ],
+      [
+        21,
+        6873
+      ]
+    ],
+    "classification_report": {
+      "Fake": {
+        "precision": 0.9747292418772563,
+        "recall": 0.8775731310942578,
+        "f1-score": 0.9236031927023945,
+        "support": 923.0
+      },
+      "Real": {
+        "precision": 0.9838247924420269,
+        "recall": 0.9969538729329852,
+        "f1-score": 0.9903458213256484,
+        "support": 6894.0
+      },
+      "accuracy": 0.982857873864654,
+      "macro avg": {
+        "precision": 0.9792770171596417,
+        "recall": 0.9372635020136215,
+        "f1-score": 0.9569745070140214,
+        "support": 7817.0
+      },
+      "weighted avg": {
+        "precision": 0.9827508263205886,
+        "recall": 0.982857873864654,
+        "f1-score": 0.982465119493838,
+        "support": 7817.0
+      }
+    },
+    "test_rows": 7817
+  },
+  "chronological_boundaries": {
+    "training_end": "2017-06-25T00:00:00+00:00",
+    "validation_start": "2017-06-26T00:00:00+00:00",
+    "validation_end": "2017-10-16T00:00:00+00:00",
+    "test_start": "2017-10-17T00:00:00+00:00"
+  },
+  "labels": {
+    "0": "Fake",
+    "1": "Real"
+  },
+  "limitations": [
+    "The headline model is trained on historical headlines from the project dataset.",
+    "The threshold and model settings are selected on validation data; test data is not used for tuning.",
+    "The chronological holdout is the more conservative estimate and does not prove performance on current news.",
+    "Predictions are text-pattern classifications, not factual verification.",
+    "Decision scores are not calibrated probabilities."
+  ]
+}

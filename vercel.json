@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "functions": {
+    "backend/app/main.py": {
+      "excludeFiles": "{Datasets/**,models/{*.backup,*.joblib},frontend/{node_modules/**,src/**,package*},tests/**,app.py,fake_news_detector.py,requirements*.txt,build_*.py,*.{docx,ipynb,db},.env*,.{git,vercel,gradio,pytest_cache}/**,**/__pycache__/**,~$*,_uv/**}"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "trained_at_utc": "2026-11-18T09:14:39.199752+00:00",
+  "model": "Linear SVM",
+  "selection_metric": "validation_macro_f1",
+  "validation_macro_f1": 0.9972462975904739,
+  "test_metrics": {
+    "accuracy": 0.9969096059747617,
+    "macro_f1": 0.9968904207661913,
+    "roc_auc": 0.9998834235960785,
+    "confusion_matrix": [
+      [
+        3566,
+        14
+      ],
+      [
+        10,
+        4176
+      ]
+    ],
+    "classification_report": {
+      "Fake": {
+        "precision": 0.9972035794183445,
+        "recall": 0.9960893854748604,
+        "f1-score": 0.9966461710452766,
+        "support": 3580.0
+      },
+      "Real": {
+        "precision": 0.9966587112171837,
+        "recall": 0.9976110845676063,
+        "f1-score": 0.997134670487106,
+        "support": 4186.0
+      },
+      "accuracy": 0.9969096059747617,
+      "macro avg": {
+        "precision": 0.9969311453177641,
+        "recall": 0.9968502350212334,
+        "f1-score": 0.9968904207661913,
+        "support": 7766.0
+      },
+      "weighted avg": {
+        "precision": 0.9969098866176673,
+        "recall": 0.9969096059747617,
+        "f1-score": 0.9969094801701154,
+        "support": 7766.0
+      }
+    },
+    "test_rows": 7766
+  },
+  "temporal_benchmark": {
+    "available": true,
+    "error": null,
+    "model": "Linear SVM",
+    "validation_macro_f1": 0.9857594948132986,
+    "test_metrics": {
+      "accuracy": 0.9984709480122325,
+      "macro_f1": 0.9963199711899886,
+      "roc_auc": 0.9999729339659171,
+      "confusion_matrix": [
+        [
+          918,
+          5
+        ],
+        [
+          7,
+          6918
+        ]
+      ],
+      "classification_report": {
+        "Fake": {
+          "precision": 0.9924324324324324,
+          "recall": 0.9945828819068255,
+          "f1-score": 0.9935064935064936,
+          "support": 923.0
+        },
+        "Real": {
+          "precision": 0.9992777697529972,
+          "recall": 0.9989891696750902,
+          "f1-score": 0.9991334488734835,
+          "support": 6925.0
+        },
+        "accuracy": 0.9984709480122325,
+        "macro avg": {
+          "precision": 0.9958551010927148,
+          "recall": 0.9967860257909579,
+          "f1-score": 0.9963199711899886,
+          "support": 7848.0
+        },
+        "weighted avg": {
+          "precision": 0.9984726924916719,
+          "recall": 0.9984709480122325,
+          "f1-score": 0.9984716650045065,
+          "support": 7848.0
+        }
+      },
+      "test_rows": 7848
+    },
+    "date_boundaries": {
+      "validation_start": "2017-06-25T00:00:00+00:00",
+      "test_start": "2017-10-17T00:00:00+00:00",
+      "undated_rows": 1
+    },
+    "date_ranges": {
+      "Training": {
+        "start": "2015-03-31T00:00:00+00:00",
+        "end": "2017-06-24T00:00:00+00:00"
+      },
+      "Validation": {
+        "start": "2017-06-25T00:00:00+00:00",
+        "end": "2017-10-16T00:00:00+00:00"
+      },
+      "Test": {
+        "start": "2017-10-17T00:00:00+00:00",
+        "end": "2018-02-19T00:00:00+00:00"
+      }
+    },
+    "split_rows": {
+      "Training": 23280,
+      "Validation": 7697,
+      "Test": 7848,
+      "Training + validation": 30977
+    },
+    "split_class_counts": {
+      "Training": {
+        "Fake": 15091,
+        "Real": 8189
+      },
+      "Validation": {
+        "Real": 5812,
+        "Fake": 1885
+      },
+      "Test": {
+        "Real": 6925,
+        "Fake": 923
+      }
+    }
+  },
+  "dataset": {
+    "rows": 38826,
+    "sha256": "2f91917822265448c64e6e934be62a6c06011c7a77e6ccb00dc80672fef6d51d",
+    "split_rows": {
+      "Training": 24848,
+      "Validation": 6212,
+      "Test": 7766,
+      "Training + validation": 31060
+    },
+    "labels": {
+      "0": "Fake",
+      "1": "Real"
+    }
+  },
+  "features": {
+    "tfidf": {
+      "word_ngrams": {
+        "ngram_range": [
+          1,
+          2
+        ],
+        "max_features": 100000,
+        "min_df": 2,
+        "stop_words": "english",
+        "sublinear_tf": true
+      },
+      "character_ngrams": {
+        "analyzer": "char_wb",
+        "ngram_range": [
+          3,
+          5
+        ],
+        "max_features": 50000,
+        "min_df": 2,
+        "sublinear_tf": true
+      }
+    }
+  },
+  "random_state": 42,
+  "versions": {
+    "python": "3.11.5",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.5.2"
+  },
+  "limitations": [
+    "Predictions reflect patterns in this dataset and are not fact-checks.",
+    "The dataset may contain source, topic, and time-period artifacts.",
+    "Decision scores are not calibrated probabilities.",
+    "The chronological benchmark is a time holdout, not a source-independent evaluation."
+  ]
+}

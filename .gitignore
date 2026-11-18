@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.venv/
+.env
+truthlens.db
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+.gradio/
+.vercel
+_uv/
+.env*
+!.env.example
